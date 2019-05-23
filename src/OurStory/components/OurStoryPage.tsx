@@ -17,48 +17,54 @@ export default class OurStoryPage extends React.Component<{},{}> {
           <img className={theme.bannerImgEvent1} src="https://www.globalsuccess-club.net/documents/20589/52387/image_our-story_1860px.jpg/b65813c1-7775-4b16-a4e1-6e8962321f4f?t=1524041756044" />
           <img className={theme.bannerImgEvent2} src="https://www.globalsuccess-club.net/documents/20589/52714/image_our-story_640px.jpg/99c44ade-cc0d-4e17-b720-7fde6d757c37?t=1524041722478" />
         </div>
-
-        <div className={theme.ourStoryText}>
-          <div className={theme.rowImg3Txt}>… finding international business partnerships instantly, anytime, anywhere?</div>
-          <div className={theme.ourStoryL2Txt2}>
-            This simple question led to the sparking idea of allymatch.<br></br><br></br>
-            Innovative companies are always looking for new international partners to grow
-            their businesses beyond borders or for their next innovation idea. Searching for
-            the right international partners is traditionally done through personal and business
-            networks or at market places like trade shows. What if startups and SME’s lack networks
-            who can efficiently help them? They must spend a lot of time and money scouring the world
-            for their needs while many of them don’t even have the resources (time and money) to do so.
-            Potential for new growth and jobs through innovation would be higher if new entrants and
-            SMEs could have a better (unbiased), quicker and easier access to the global markets.
-            Also, established businesses can unfold their innovation potential and focus on their core
-            business if they could find international partners more efficiently.
-          </div>
-
-          <div className={theme.ourStoryL2Txt}>
-              Innovation potential which lies
-              dormant in universities,
-              research institutes and
-              companies could be unlocked
-              with an easier way to find
-              collaboration partners globally.
-          </div>
-
-          <div className={theme.ourStoryL2Txt2}>
-            Understanding the need for easily finding the right international partners in a fast-paced
-            technological environment, gave allymatch founder & CEO Işınay Kemmler the inspiration to
-            create a brand new digital matchmaking platform which could make innovation possible by
-            bringing the innovators together for collaboration – without the hassle and without the
-            expense.
-          </div>
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12">
+                    <div className={theme.rowImg3Txt}>This simple question led to the sparking idea of allymatch.</div>
+                </div>
+                <div className="col-md-3">
+                    <div className={theme.ourStoryLeftBox}>
+                        Innovation potential which lies dormant in universities, research institutes and companies could be unlocked with an easier way to find collaboration partners globally.
+                    </div>
+                </div>
+                <div className="col-md-9">
+                    <div className={theme.ourStoryRightBox}>
+                        <p>Innovative companies are always looking for new international partners to grow
+                            their businesses beyond borders or for their next innovation idea. Searching for
+                            the right international partners is traditionally done through personal and business
+                            networks or at market places like trade shows. What if startups and SME’s lack networks
+                            who can efficiently help them? They must spend a lot of time and money scouring the world
+                            for their needs while many of them don’t even have the resources (time and money) to do so.
+                            Potential for new growth and jobs through innovation would be higher if new entrants and
+                            SMEs could have a better (unbiased), quicker and easier access to the global markets.
+                            Also, established businesses can unfold their innovation potential and focus on their core
+                            business if they could find international partners more efficiently.</p>
+                        <br/>
+                        <p>
+                            Understanding the need for easily finding the right international partners in a fast-paced
+                            technological environment, gave allymatch founder & CEO Işınay Kemmler the inspiration to
+                            create a brand new digital matchmaking platform which could make innovation possible by
+                            bringing the innovators together for collaboration – without the hassle and without the
+                            expense.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
+          <div className="clearfix">&nbsp;</div>
         <div className={theme.videoRow}>
           <img className={theme.rowImg1} src="https://www.globalsuccess-club.net/documents/20589/51325/icon-money.gif/c71fd8af-d06f-4efa-b682-aa7c56d6c988?t=1522138865105"/>
-          <div className={theme.ourStoryL4Txt1}>Interested in learning more?</div>
-          <a target="_blank" href="https://donar.messe.de/exhibitor/hannovermesse/2018/T261200/allymatch-company-brochure-eng-552256.pdf"><div className={theme.ourStoryL4Txt2}>Read our digital brochure > </div></a>
+          <div className={theme.descHeadingNew}>Interested in learning more?</div>
+        <div className={theme.themeButtonArea}>
+            <a target="_blank" href="https://donar.messe.de/exhibitor/hannovermesse/2018/T261200/allymatch-company-brochure-eng-552256.pdf" className={theme.themeWhiteButton}>
+                Read our digital brochure
+            </a>
+        </div>
           <img className={theme.rowImg1} src="https://www.globalsuccess-club.net/documents/20589/51325/lightbulb-2.gif/e5a38b84-fe00-4ac5-81d6-4bcd7a65168e?t=1523960212547"/>
-          <div className={theme.ourStoryL4Txt1}>Think you'd make a good fit to join our innovation factory?</div>
-          <a href="/#/jobs"><div className={theme.ourStoryL4Txt2}>Take a look at our Career Page > </div></a>
+          <div className={theme.descHeadingNew}>Think you'd make a good fit to join our innovation factory?</div>
+            <div className={theme.themeButtonArea}>
+                <a href="/#/jobs" className={theme.themeWhiteButton}>Take a look at our Career Page</a>
+            </div>
         </div>
 
         <div className={theme.footerDiv}>

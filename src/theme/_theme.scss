@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600");
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 @import "~react-toolbox/lib/colors";
 @import "~react-toolbox/lib/globals";
 $color-primary: #11a3ab;
@@ -12,6 +12,48 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   overflow-y: auto;
   width: 1000px !important;
   border-radius: 2.2rem;
+}
+
+.ourStoryLeftBox {
+  padding:20px;
+  background:#f3f5f5;
+  font-family: Ubuntu;
+  font-size:18px;
+  line-height: 30px;
+  margin-bottom:20px;
+}
+
+.ourStoryRightBox {
+  font-family: Ubuntu;
+  font-size:15px;
+  line-height:25px;
+  margin-bottom:20px;
+}
+
+.themeButtonArea {
+  margin:50px 0;
+  .themeWhiteButton {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size:22px;
+    background:#fff;
+    padding:10px 50px 10px 20px;
+    display:inline-block;
+    color:$color-primary;
+    position:relative;
+    &:hover {
+      text-decoration:none;
+    }
+    &:after {
+      content:'';
+      position:absolute;
+      top:16px;
+      right:20px;
+      width:11px;
+      height:20px;
+      background:url('http://www.sezgin.co/public/assets/images/button-arrow.png') no-repeat center;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 300px) {

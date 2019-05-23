@@ -174,3 +174,7 @@ export const pressKit3: string;
 export const pressKitMargin: string;
 export const ourStoryText: string;
 export const pressKitTitle: string;
+export const ourStoryLeftBox: string;
+export const ourStoryRightBox: string;
+export const themeButtonArea: string;
+export const themeWhiteButton: string;
