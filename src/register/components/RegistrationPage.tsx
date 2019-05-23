@@ -134,7 +134,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                       required
                       auto={false}
                       source={registrationStore.businessTypeList}
-                      label='BusinessType'
+                      label='Business Type'
                       name="businessType"
                       onChange={this.updateProperty}
                       value={registrationStore.businessType}
@@ -156,7 +156,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                               />
                         </div>
                         <div className="col-sm-2" style={{padding: '0px'}}>
-                          <TooltipIcon style={{paddingTop: '1.6vw', color: '#11a3ab'}} value="info" tooltip="Please select the industry that best describes your company's main activity. If your company is involved in multiple industries, feel free to create additional profiles to describe these needs once your registration is approved." tooltipPosition='right'/>
+                          <TooltipIcon style={{paddingTop: '1.6vw', color: '#11a3ab'}} value="info" tooltip="Please select the industry that best describes your company‘s main focus. You can add more industries while completing your profile in the app." tooltipPosition='top' />
                         </div>
                       </div>
                       <div className="row">
@@ -175,7 +175,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                             />
                         </div>
                         <div className="col-sm-2" style={{padding: '0px'}}>
-                          <TooltipIcon style={{paddingTop: '1.6vw', color: '#11a3ab'}} value="info" tooltip="Please use the address of your headquarters for your profile location. Additional locations outside of your headquarters can be listed in a separate profile once your registration is approved."  tooltipPosition='right'/>
+                          <TooltipIcon style={{paddingTop: '1.6vw', color: '#11a3ab'}} value="info" tooltip="Please use the location of your company‘s headquarters."  tooltipPosition='right'/>
                         </div>
                       </div>
                     <Input type='text' label='Company Website * ' name='companyWebsite' theme={regScreen} maxLength={50} value={registrationStore.companyWebsite} onChange={this.updateProperty} />
@@ -212,7 +212,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                             (
                             <Input  type='text' label='Other Title *' name='otherTitle' className={theme.extraFields} maxLength={50} value={registrationStore.otherTitle} onChange={this.updateProperty} />
                           ):""}
-                        <Input  type='text' label= 'Email *'  name='email' theme={regScreen} maxLength={50} value={registrationStore.email} onChange={this.updateProperty} />
+                        <Input  type='text' label= 'Company Email *'  name='email' theme={regScreen} maxLength={50} value={registrationStore.email} onChange={this.updateProperty} />
                       </div>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
               <div className="col-md-4 col-sm-12 col-xs-12">
                 <div className={theme.regCard}>
                   <div className={theme.legendDiv}>Additional Information</div>
-                  Are you currently or will you in the near future be operating international? <span className={theme.requiredClr}> * </span><p></p>
+                  Are you currently or will you in the near future be operating internationally? <span className={theme.requiredClr}> * </span><p></p>
                   <RadioGroup name='international' onChange={this.updateRadio} value={registrationStore.international}>
                     <RadioButton name='international' label={<span className={theme.regFont}>Yes</span>} value='Yes' checked />
                     <RadioButton name='international' label={<span className={theme.regFont}>No</span>} value='No' />
@@ -239,7 +239,7 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                     ))
                   }
 
-                  <p>&nbsp; </p> How did you hear about the allymatch (single selection)<span className={theme.requiredClr}> * </span><p></p>
+                  <p>&nbsp; </p> How did you hear about allymatch? (single selection)<span className={theme.requiredClr}> * </span><p></p>
                   <RadioGroup name="betaTest" onChange={(val) => registrationStore.betaTest = val} value={registrationStore.betaTest}>
                     {
                       registrationStore.betaList.map((beta, idx) => (
@@ -257,10 +257,10 @@ export default class RegistrationPage extends React.Component<{ registrationStor
                 label={<span className={theme.regFont}>I have read and agree with the <a href="/#/termsConditions" target="_blank" className={theme.generalColor}>terms and conditions</a></span>}
                 />
               <div className="row">
-                <div className="col-md-4 col-sm-6 col-xs-6">
-                  <Button theme={regScreen} onClick={this.clearForm} label='Clear All' />
-                </div>
-                <div className="col-md-4 col-sm-6 col-xs-6">
+                {/*<div className="col-md-4 col-sm-6 col-xs-6">*/}
+                  {/*<Button theme={regScreen} onClick={this.clearForm} label='Clear All' />*/}
+                {/*</div>*/}
+                <div className="col-md-12 col-sm-12 col-xs-12">
                   <Button theme={regScreen} onClick={this.submitForm} label='Submit' />
                 </div>
               </div>
@@ -270,7 +270,8 @@ export default class RegistrationPage extends React.Component<{ registrationStor
         <div className={theme.footerDiv}>
         <div className="row">
         <div className="col-md-4 col-sm-12 col-xs-12">
-            <a href="/#/termsConditions" target="_blank" className={theme.link}><span className={theme.generalFont}>Terms of Use and Privacy Policy</span></a> <span> | </span>
+            <a href="/#/termsConditions" target="_blank" className={theme.link}><span className={theme.generalFont}>Terms & Conditions</span></a> <span> | </span>
+            <a href="/#/privacyPolicy" target="_blank" className={theme.link}><span className={theme.generalFont}>Privacy Policy</span></a> <span> | </span>
             <a href="/#/contactImprint" target="_blank" className={theme.link}><span className={theme.generalFont}>Contact</span></a>
         </div>
         <div className="col-md-4 col-sm-12 col-xs-12">
@@ -286,8 +287,6 @@ export default class RegistrationPage extends React.Component<{ registrationStor
             <a href="https://twitter.com/allymatch_int" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/twitter.gif/fe82670f-d2ce-4c74-a32d-7cbb4b360fb4?t=1494928971818" width="30" height="30" className={theme.logosD}/></a>
             &nbsp;
             <a href="https://www.youtube.com/channel/UCz3rwTFs2fmiwr3ttRQhe4w" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/youtube.gif/d938fbce-e623-4349-8cbf-a93552c58d39?t=1494928972218" width="30" height="30" className={theme.logosD}/></a>
-            &nbsp;
-            <a href="https://plus.google.com/u/0/105386510046056717814" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/google%2B.gif/2f18f8d8-327f-48bb-aa9f-13d865925ac8?t=1494928968403" width="30" height="30" className={theme.logosD}/></a>
           </div>
           </div>
         </div>

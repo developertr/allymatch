@@ -74,6 +74,8 @@ export default class PressPage extends React.Component<{},{}> {
                 <br></br><br></br>
                 <a href="https://www.globalsuccess-club.net/documents/20589/53755/Press+Release_HannoverMesse+_English.pdf/f63aada3-0afd-49c0-9efd-005eaecccc7e" target="_blank"><span className={theme.pressKit3}>Press release April 23rd 2018 (English) (PDF, 155.0 KB)</span></a><br></br><br></br>
                 <a href="https://www.globalsuccess-club.net/documents/20589/53755/HannoverMesse_PressRelease_German.pdf/4ca30b9c-82b2-45d9-b252-0657770e64fc" target="_blank"><span className={theme.pressKit3}>Press release April 23rd 2018 (German) (PDF, 176.0 KB)</span></a><br></br><br></br>
+                  <a href="https://www.globalsuccess-club.net/documents/20589/53755/Hannover+Messe+2019+Press+Release+English/ef506e9d-b786-424e-91c7-de45d2a1a258" target="_blank"><span className={theme.pressKit3}>Press Release April 1, 2019 (English) (PDF, 183.0 KB)</span></a><br></br><br></br>
+                  <a href="https://www.globalsuccess-club.net/documents/20589/53755/Hannover+Messe+2019+Press+Release+German/5e9b9322-464d-41b5-ae9f-1576d0664556" target="_blank"><span className={theme.pressKit3}>Press Release April 1, 2019 (German) (PDF, 310.0 KB)</span></a><br></br><br></br>
               </div>
             </div>
           </div>
@@ -82,7 +84,8 @@ export default class PressPage extends React.Component<{},{}> {
         <div className={theme.footerDiv}>
         <div className="row">
         <div className="col-md-4 col-sm-12 col-xs-12">
-            <a href="/#/termsConditions" target="_blank" className={theme.link}><span className={theme.generalFont}>Terms of Use and Privacy Policy</span></a> <span> | </span>
+            <a href="/#/termsConditions" target="_blank" className={theme.link}><span className={theme.generalFont}>Terms & Conditions</span></a> <span> | </span>
+            <a href="/#/privacyPolicy" target="_blank" className={theme.link}><span className={theme.generalFont}>Privacy Policy</span></a> <span> | </span>
             <a href="/#/contactImprint" target="_blank" className={theme.link}><span className={theme.generalFont}>Contact</span></a>
         </div>
         <div className="col-md-4 col-sm-12 col-xs-12">
@@ -98,8 +101,6 @@ export default class PressPage extends React.Component<{},{}> {
             <a href="https://twitter.com/allymatch_int" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/twitter.gif/fe82670f-d2ce-4c74-a32d-7cbb4b360fb4?t=1494928971818" width="30" height="30" className={theme.logosD}/></a>
             &nbsp;
             <a href="https://www.youtube.com/channel/UCz3rwTFs2fmiwr3ttRQhe4w" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/youtube.gif/d938fbce-e623-4349-8cbf-a93552c58d39?t=1494928972218" width="30" height="30" className={theme.logosD}/></a>
-            &nbsp;
-            <a href="https://plus.google.com/u/0/105386510046056717814" target="_blank"><img src="https://www.globalsuccess-club.net/documents/20589/33068/google%2B.gif/2f18f8d8-327f-48bb-aa9f-13d865925ac8?t=1494928968403" width="30" height="30" className={theme.logosD}/></a>
           </div>
           </div>
         </div>

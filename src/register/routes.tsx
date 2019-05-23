@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import RegistrationPage from './components/RegistrationPage'
 import TermsConditions from './components/TermsConditions'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import ContactImprint from './components/ContactImprint'
 import RegistrationUserEvent from './components/RegistrationUserEvent'
 import RegistrationEvent from './components/RegistrationEvent'
@@ -16,6 +17,9 @@ const RegistrationRoutes = (
   </Route>
   <Route path="termsConditions">
     <IndexRoute component={TermsConditions} />
+  </Route>
+  <Route path="privacyPolicy">
+      <IndexRoute component={PrivacyPolicy} />
   </Route>
   <Route path="tncEvent">
     <IndexRoute component={TermsConditionsEvent} />

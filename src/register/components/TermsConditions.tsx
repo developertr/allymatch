@@ -12,7 +12,7 @@ export default class TermsConditions extends React.Component<{}, {}> {
       <div>
       <img className={theme.banner} src="https://www.globalsuccess-club.net/documents/20589/33068/banner+image+landing.jpg/9f2a7a4d-302f-4fc9-a88c-247bf4d889a3?t=1494928966400" />
       <img className={theme.banner1} src="https://www.globalsuccess-club.net/documents/20589/33063/RBI.jpg/8f88711d-7661-4381-892b-06f4bfc9027c?t=1511450769183"/>
-      <div className={theme.bannerRow}><span className={theme.defaultMargin}>Terms of Use and Privacy Policy</span></div>
+      <div className={theme.bannerRow}><span className={theme.defaultMargin}>Terms & Conditions</span></div>
         <div className={theme.tncCard}>
               {/*<div className={theme.generalHeading}>Terms of Use and Privacy Policy</div>*/}
 

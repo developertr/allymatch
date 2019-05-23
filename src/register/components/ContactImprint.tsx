@@ -22,27 +22,38 @@ export default class ContactImprint extends React.Component<{}, {}> {
               <p>&nbsp;</p>
               <div className={theme.generalHeading}>Imprint</div>
 
-              Allymatch<br></br>
-              Horchheimer Straße 74-78<br></br>
-              67547 Worms<br></br>
-              E-Mail: contact@allymatch.com<br></br>
-              Web: www.allymatch.de<br></br>
-              <br></br><br></br><br></br>
-              The mobile application "allymatch" is a spin off of the Global Success GmbH.<p></p>
-              Global Success GmbH<br></br>
-              Goethestraße 2<br></br>
-              60313 Frankfurt am Main<br></br>
-              Tel.: 069 / 45 00 44 30<br></br>
-              Fax: 069 / 45 00 44 29<br></br>
-              E-Mail: contact@globalsuccess.de<br></br>
-              Web: www.globalsuccess-club.net, www.globalsuccess-days.net <br></br>
-              <p>&nbsp;</p>
-              Headquarter: Frankfurt am Main<br></br>
-              AG Frankfurt am Main: HRB 93915<br></br>
-              CEO: Isinay Kemmler<br></br>
-              Sales tax identification number: DE283494248<br></br>
-              <br></br>
-        </div>
+                <b>Allymatch</b><br/>
+          Mombacher Str. 48 55122 Mainz<br/>
+          Tel.: 06131 / 58 45 755<br/>
+           Fax: 06131 / 58 45 740 <br/>
+          E-Mail: contact@allymatch.com<br/>
+           Web: www.allymatch.com<br/><br/>
+
+          Headquarter: Mainz<br/>
+          CEO: Isinay Kemmler<br/>
+          AG Mainz: HRB 48672<br/>
+          Sales tax identification number: DE322743667<br/><br/>
+
+          <b>Worms Location:</b><br/>
+          Horchheimer Straße 74-78<br/>
+          67547 Worms<br/>
+          Tel: 6241/ 93 52 13<br/><br/>
+
+          Allymatch GmbH is a spin off of the Global Success GmbH.<br/><br/>
+
+          <b>Global Success GmbH</b><br/>
+          Mombacher Str. 48<br/>
+          55122 Mainz<br/>
+          Tel.: 06131 / 32 94 818<br/>
+          Fax: 06131 / 32 94 817<br/>
+          E-Mail: contact@globalsuccess.de<br/>
+          Web: www.globalsuccess-club.net, www.globalsuccess-days.net<br/><br/>
+
+          Headquarter: Mainz<br/>
+          AG Mainz: HRB 48697<br/>
+          CEO: Isinay Kemmler<br/>
+          Sales tax identification number: DE283494248<br/><br/><br/><br/><br/>
+      </div>
       </div>
     )
   }
