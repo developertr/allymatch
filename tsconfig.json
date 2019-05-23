@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",        
+        "allowSyntheticDefaultImports": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "noLib": false,
+        "sourceMap": true,
+        "jsx": "react",
+        "outDir": "dist"
+    },
+    "files": [ "node_modules/@types/react-dom/server.d.ts" ],
+    "include": [
+        "src/**/*"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        "resolveGlobs": true,
+        "forkChecker": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

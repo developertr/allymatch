@@ -1,0 +1,2117 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import "~react-toolbox/lib/colors";
+@import "~react-toolbox/lib/globals";
+$color-primary: #11a3ab;
+$color-primary-dark: $palette-blue-700;
+$navigation-drawer-desktop-width: 3 * $standard-increment-desktop !default;
+$preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
+
+.editMultiple{
+  overflow-y: auto;
+  width: 1000px !important;
+  border-radius: 2.2rem;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 300px) {
+  .appBar{
+    background-color: #ffffff;
+    // height: 6.8vw;
+    height: 180px;
+  }
+
+  .banner{
+    max-width:100%;
+      height: 350px;
+      display: none;
+  }
+
+  .banner1{
+    max-width:100%;
+      height: auto;
+      display: block;
+  }
+
+  .lineImage{
+    display: none;
+
+  }
+
+  .lineImageR{
+    display: block;
+    width: 100%;
+    margin-top: 1.1%;
+  }
+
+  .bannerText {
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     color: #fff;
+     /*font-size: 1.3vw;*/
+     font-size: 28px;
+     font-family: Ubuntu;
+     padding: 10px;
+     max-width: 80%;
+  }
+
+  .regButtonTop{
+    margin-top: -4%;
+    margin-bottom: 0%;
+    margin-left: -3%;
+    text-decoration: none;
+    width:90%;
+  }
+
+  .logo{
+    margin-left: 115px;
+    max-width: 250px;
+  }
+
+  /*.video{
+    width: 800px;
+  }*/
+
+  .regButton{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width:60%;
+  }
+
+  .imageLink2{
+    height:auto;
+    max-width:45%;
+    padding-right: 15px;
+    padding-top: 12px;
+  }
+
+  .textWhite1{
+    color: white;
+    font-family: Ubuntu;
+    /*font-size: 1vw;*/
+    font-size: 35px;
+    margin-top: 2%;
+  }
+
+  .textWhite{
+    color: white;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 10%;
+  }
+
+  .centreAlign{
+    text-align: center;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 60px;
+  }
+
+  .quoteStyle{
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: italic;
+    /*font-size: 1.8vw;*/
+    font-size: 50px;
+    color: white;
+    margin-top: 2%;
+  }
+
+  .imageLink{
+    height:25%;
+    max-width:60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*margin-bottom: 8%;
+    margin-left: 21%;*/
+  }
+
+  .descHeading{
+    text-align: center;
+    color: #11a3ab;
+    /*font-size: 2.5vw;*/
+    font-size: 55px;
+    font-family: Ubuntu;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .descText{
+    /*font-size:1.2vw;*/
+    font-size: 45px;
+    padding-left:17%;
+    padding-right:17%;
+    font-family: Ubuntu;
+    margin-bottom: 50px;
+  }
+
+  .mapDiv{
+    text-align: center;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 45px;
+    padding-left:17%;
+    padding-right:17%;
+    margin-top: 3%;
+  }
+
+  .bannerRow{
+    /*height: 2.8vw;*/
+    height: 80px;
+    background-color: #11a3ab;
+    color: #ffffff;
+    font-family: Ubuntu;
+    /*font-size: 2vw;*/
+    font-size: 50px;
+    display: flex;
+  }
+
+  .tncCard{
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3%;
+    font-size: 35px;
+    font-family: Ubuntu;
+    width:66%;
+  }
+
+  .generalHeading{
+    color: #11a3ab;
+    /*font-size: 1.3vw;*/
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+/*  .videoEmbed{
+    position: absolute;
+    top: 24px;
+    left: 180px;
+    bottom: 20px;
+    height: 346px;
+    width: 613px;
+    margin-bottom: 20px;
+  }*/
+
+  .legendDiv{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 5%;
+  }
+
+  .regCard{
+    margin: 20px 20px 20px 20px;
+    height: auto;
+    font-size: 35px;
+  }
+
+  .regFont{
+    color: #3b3b3b;
+    font-family: Ubuntu;
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  .button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #11a3ab !important;;
+    width: 245px;
+    height: 55px !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+  }
+
+  .footerDiv{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: 13.20%;
+    margin-right: 13.20%;
+    text-align: center;
+    /*font-size: 1.15vw;*/
+    font-size: 30px;
+    }
+
+    .footerDivRight{
+      display: flex;
+      margin-left: 36%;
+      margin-top: 3%;
+      font-size: 70px;
+    }
+
+    .landingLine{
+      width: 100%;
+      margin-top: 4%;
+      margin-bottom: 4%;
+    }
+
+    .contactDiv{
+      margin-bottom: 25px;
+    }
+
+
+
+
+
+
+
+    .descHeadingNew{
+      color: white;
+      font-size: 60px;
+      font-family: Ubuntu;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+
+    .descTextNew{
+      font-size: 40px;
+      color: white;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-family: Ubuntu;
+    }
+
+    .video{
+      width: 800px;
+    }
+
+    .videoEmbed{
+      position: absolute;
+      top: 5.5%;
+      left: 18%;
+      height: 89%;
+      width: 64.5%;
+      margin-bottom: 20px;
+    }
+
+    .bannerL6{
+      display: none;
+    }
+
+    .bannerL6_2{
+      width: 975px;
+      height: 800px;
+      display: block;
+    }
+
+    .bannerL7{
+      display: none;
+    }
+
+    .bannerL7_2{
+      width: 975px;
+      height: 1700px;
+      display: block;
+    }
+
+    .bannerL7_2Jobs{
+      width: 150%;
+      height: 800px;
+      display: block;
+    }
+
+    .bannerTextL6 {
+       position: absolute;
+       padding: 10px;
+       font-family: Ubuntu;
+       text-align: center;
+       top:45px;
+    }
+
+    .descHeadingL7{
+      color: #11a3ab;
+      font-size: 75px;
+      font-family: Ubuntu;
+      padding-top: 50px;
+      padding-bottom: 15px;
+    }
+
+    .descHeadingL8{
+      color: white;
+      font-size: 75px;
+      font-family: Ubuntu;
+      padding-top: 50px;
+      padding-bottom: 15px;
+      padding-top: 30px;
+    }
+
+    .rowImg3{
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 100px;
+    }
+
+    .ourStoryText{
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .rowImg1{
+      height: 300px;
+      width: auto;
+      padding: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .boldTxtL6{
+      font-weight: bold;
+      font-size: 40px;
+      padding-left: 150px;
+      padding-right: 150px;
+      color: white;
+      padding-top: 20px;
+      font-family: Ubuntu;
+    }
+
+    .rowImg3_1{
+      height: 250px;
+      width: auto;
+      padding: 5px;
+      margin-top: 4%;
+    }
+
+    .rowImg3Txt{
+      color: #11a3ab;
+      font-size: 60px;
+      font-family: Ubuntu;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .buttonL2{
+      margin-bottom: 5%;
+      margin-top: 5%;
+      width: 85%;
+    }
+
+    .descTextL7{
+      font-size: 50px;
+      color: #3b3b3b;
+      font-family: Ubuntu;
+    }
+
+    .bannerFull{
+      display: none;
+    }
+
+    .bannerMob{
+      display: block;
+    }
+
+    .rowImg3_Txt{
+      font-size: 35px;
+      font-family: Ubuntu;
+      color: #41454c;
+    }
+
+  .rowImg3_Q{
+    color: #8a919c;
+    font-size: 35px;
+    font-family: Ubuntu;
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .rowImg3_A{
+    color: #3b3b3b;
+    font-size: 50px;
+    font-family: Ubuntu;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .rowImg3_ABig{
+    color: #11a3ab;
+    font-size: 50px;
+    font-family: Ubuntu;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .rowImg3_ASmall{
+    color: #8a919c;
+    font-size: 35px;
+    font-family: Ubuntu;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .alignLeft{
+
+  }
+
+  .alignRightNew{
+
+  }
+
+  .lineL3{
+    border: none;
+    height: 1px;
+    color: #8a919c;
+    background-color: #8a919c;
+    width: 800px;
+  }
+
+  .buttonL5{
+    margin-top: 25px;
+    width: 60%;
+  }
+
+  .buttonL6{
+    margin-top: 25px;
+    width: 45%;
+  }
+
+  .logoLanding{
+    margin-left: 225px;
+    max-width: 400px;
+    width: 400px;
+    padding-top: 20px;
+  }
+
+  .header1{
+    background-color:#11a3ab;
+    height:30px;
+  }
+
+  .header2{
+    height:200px;
+  }
+
+  .menuMobile{
+    display: block;
+  }
+
+  .menuDesktop{
+    display: none;
+  }
+
+  .jobsL2Txt1{
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobsL2Txt2{
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    font-weight: bold;
+  }
+
+  .descHeadingJobs{
+    color: white;
+    font-size: 60px;
+    font-family: Ubuntu;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .jobsL3Txt1{
+    font-size: 35px;
+    font-family: Ubuntu;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .jobsL3Txt2{
+    font-size: 35px;
+    font-family: Ubuntu;
+    color: white;
+  }
+
+  .jobsL3Right{
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  .jobsL3Left{
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  .jobsL5Img{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .jobsL5Txt {
+     position: absolute;
+     font-family: Ubuntu;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     font-size: 35px;
+  }
+
+  .jobsL5ImgL{
+
+  }
+
+  .jobsL5ImgR{
+
+  }
+
+  .jobsL6Txt{
+    position: absolute;
+    padding: 10px;
+    top: -4%;
+    left: 25%;
+  }
+
+  .jobsL6Txt1{
+    margin-top: 10%;
+    margin-bottom: 35px;
+    font-size: 60px;
+  }
+
+  .jobsL6Txt2{
+    font-family: Ubuntu;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #41454c;
+  }
+
+  .jobsL6Txt3{
+    font-family: Ubuntu;
+    font-size: 40px;
+  }
+
+  .jobsL6Txt4{
+    font-family: Ubuntu;
+    font-size: 40px;
+    color: #11a3ab;
+  }
+
+  .descTextL6{
+    font-size: 40px;
+    color: white;
+    font-family: Ubuntu;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bannerImgEvent1{
+    display: none;
+  }
+
+  .bannerImgEvent2{
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    display: block;
+  }
+
+  .pressDesc{
+    color: #273348;
+    font-size: 50px;
+    font-family: Ubuntu;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .pressDesc2{
+    color: #41454c;
+    font-size: 40px;
+    font-family: Ubuntu;
+    margin-left: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+  }
+
+  .pressDesc3{
+    color: #273348;
+    font-size: 35px;
+    font-family: Ubuntu;
+    margin-left: 80px;
+    margin-bottom: 100px;
+  }
+
+  .jobsL4Txt{
+    font-size: 35px;
+    font-family: Ubuntu;
+    color: #41454c;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobDtlsHead{
+    color: #11a3ab;
+    font-size: 60px;
+    font-family: Ubuntu;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    cursor: pointer;
+  }
+
+  .jobDtlsDsc{
+    color: #41454c;
+    font-size: 60px;
+    font-family: Ubuntu;
+    margin-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobDtlsQ{
+    color: #273348;
+    font-size: 45px;
+    font-family: Ubuntu;
+    margin-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobsDtlsA{
+    color: #273348;
+    font-size: 45px;
+    font-family: Ubuntu;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .ourStoryL2Txt{
+    color: #11a3ab;
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .ourStoryL4Txt1{
+    color: white;
+    font-size: 60px;
+    font-family: Ubuntu;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .ourStoryL4Txt2{
+    color: white;
+    font-size: 45px;
+    font-family: Ubuntu;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .ourStoryL2Txt2{
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .jobsDefaultTxt{
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+  }
+
+  .eventTxt{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .eventTxt2{
+    font-family: Ubuntu;
+    font-size: 40px;
+    color: #273348;
+  }
+
+  .landingPageD{
+    display: none;
+  }
+
+  .landingPageM{
+    display: block;
+  }
+
+  .regDialog{
+    font-family: Ubuntu;
+    font-size: 40px;
+    color: #273348;
+  }
+
+  .pressKit2{
+    background-color: #11a3ab;
+    text-align: center;
+    padding-bottom: 50px;
+    border-radius: 2.2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+  }
+
+  .pressKitMargin{
+    text-align: center;
+  }
+
+  .pressKit3{
+    font-size: 40px;
+    color: white;
+    font-family: Ubuntu;
+  }
+
+  .pressKitTitle{
+    font-size: 40px;
+    font-family: Ubuntu;
+    color: #41454c;
+  }
+
+  .videoRow{
+    background-color: #11a3ab;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
+  }
+
+  .icon{
+   color: #11a3ab !important;
+   span {
+        font-size: 40px !important;
+      }
+   width: 7rem !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .appBar{
+    background-color: #ffffff;
+    /*height: 5vw;*/
+    height: 100px;
+  }
+
+  .banner{
+    max-width:100%;
+      height: auto;
+      display: block;
+  }
+
+  .banner1{
+    max-width:100%;
+      height: auto;
+      display: none;
+  }
+
+  .lineImage{
+    display: block;
+    width: 100%;
+    margin-top: 0.6%;
+  }
+
+  .lineImageR{
+    display: none;
+
+  }
+
+  .bannerText {
+     position: absolute;
+     top: 10%;
+     left: 20%;
+     color: #3b3b3b;
+     /*font-size: 1.3vw;*/
+     font-size: 16px;
+     font-family: Ubuntu;
+     padding: 10px;
+     max-width: 25%;
+  }
+
+  .regButtonTop{
+    margin-top: 4%;
+    margin-bottom: 7%;
+    text-decoration: none;
+    width:70%;
+  }
+
+  .logo{
+    margin-left: 16vw;
+    max-width: 210px;
+  }
+
+  /*.video{
+    width: 40%;
+  }*/
+
+  .regButton{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width:20%;
+  }
+
+  .imageLink2{
+    height:auto;
+    max-width:40%;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  .textWhite1{
+    color: white;
+    font-family: Ubuntu;
+    /*font-size: 1vw;*/
+    font-size: 15px;
+    margin-top: 12%;
+  }
+
+  .textWhite{
+    color: white;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .centreAlign{
+    text-align: center;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 25px;
+  }
+
+  .quoteStyle{
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: italic;
+    /*font-size: 1.8vw;*/
+    font-size: 20px;
+    color: white;
+  }
+
+  .imageLink{
+    height:auto;
+    max-width:60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*margin-bottom: 8%;
+    margin-left: 21%;*/
+  }
+
+  .descHeading{
+    text-align: center;
+    color: #11a3ab;
+    /*font-size: 2.5vw;*/
+    font-size: 40px;
+    font-family: Ubuntu;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .descText{
+    /*font-size:1.2vw;*/
+    font-size: 20px;
+    padding-left:17%;
+    padding-right:17%;
+    font-family: Ubuntu;
+    margin-bottom: 30px;
+  }
+
+  .mapDiv{
+    text-align: center;
+    font-family: Ubuntu;
+    /*font-size: 1.2vw;*/
+    font-size: 20px;
+    padding-left:17%;
+    padding-right:17%;
+    margin-top: 3%;
+  }
+
+  .bannerRow{
+    /*height: 2.8vw;*/
+    height: 45px;
+    background-color: #11a3ab;
+    color: #ffffff;
+    font-family: Ubuntu;
+    /*font-size: 2vw;*/
+    font-size: 25px;
+    display: flex;
+  }
+
+  .tncCard{
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3%;
+    font-size: 15px;
+    font-family: Ubuntu;
+    width:66%;
+  }
+
+  .generalHeading{
+    color: #11a3ab;
+    /*font-size: 1.3vw;*/
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  /*.videoEmbed{
+    position: absolute;
+    top: 6%;
+    left: 34.85%;
+    bottom: 5%;
+    height: 88%;
+    width: 30.3%;
+    margin-bottom: 20px;
+  }*/
+
+  .legendDiv{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .regCard{
+    margin: 20px 20px 20px 20px;
+    height: auto;
+  }
+
+  .regFont{
+    color: #3b3b3b;
+    font-family: Ubuntu;
+    font-weight: normal;
+  }
+
+  .button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #11a3ab !important;;
+    width: 200px;
+    height: 40px;
+    color: #ffffff !important;
+    text-transform: none !important;
+  }
+
+  .footerDiv{
+    margin-top: 8%;
+    margin-bottom: 2%;
+    margin-left: 13.20%;
+    margin-right: 13.20%;
+    text-align: center;
+    /*font-size: 1.15vw;*/
+    font-size: 16px;
+    }
+
+    .footerDivRight{
+      display: flex;
+      margin-left: 15%;
+    }
+
+    .landingLine{
+      width: 100%;
+      margin-top: 0.5%;
+    }
+
+
+
+  .descHeadingNew{
+    color: white;
+    font-size: 40px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+  }
+
+  .descTextNew{
+    font-size: 18px;
+    color: white;
+    padding-left: 375px;
+    padding-right: 375px;
+    font-family: Ubuntu;
+  }
+
+  .video{
+    width: 50%;
+  }
+
+  .videoEmbed{
+    position: absolute;
+    top: 6%;
+    left: 30.8%;
+    height: 88.2%;
+    width: 38.5%;
+    margin-bottom: 20px;
+  }
+
+  .bannerL6{
+    width:100%;
+    height: auto;
+    display: block;
+  }
+
+  .bannerL6_2{
+    display: none;
+  }
+
+  .bannerL7{
+    width:100%;
+    height: auto;
+    display: block;
+  }
+
+  .bannerL7_2{
+    display: none;
+  }
+
+  .bannerL7_2Jobs{
+    display: none;
+  }
+
+  .bannerTextL6{
+     position: absolute;
+     //top: 10%;
+     padding: 10px;
+     font-family: Ubuntu;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+  }
+
+  .descHeadingL7{
+    color: #11a3ab;
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+  }
+
+  .descTextL7{
+    font-size: 18px;
+    color: #3b3b3b;
+    padding-left: 375px;
+    padding-right: 375px;
+    font-family: Ubuntu;
+  }
+
+  .descHeadingL8{
+    color: white;
+    font-size: 45px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+    padding-top: 30px;
+  }
+
+  .rowImg3{
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+  }
+
+  .ourStoryText{
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .rowImg1{
+    height: 150px;
+    width: auto;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .boldTxtL6{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 500px;
+    padding-right: 500px;
+    color: white;
+    padding-top: 120px;
+    font-family: Ubuntu;
+  }
+
+  .rowImg3_1{
+    height: 150px;
+    width: auto;
+    padding: 20px;
+  }
+
+  .rowImg3Txt{
+    color: #11a3ab;
+    font-size: 35px;
+    font-family: Ubuntu;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .buttonL2{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 60%;
+  }
+
+
+  .bannerFull{
+    display: block;
+  }
+
+  .bannerMob{
+    display: none;
+  }
+
+  .rowImg3_Txt{
+    font-size: 16px;
+    font-family: Ubuntu;
+    color: #41454c;
+  }
+
+  .rowImg3_Q{
+    color: #8a919c;
+    font-size: 15px;
+    font-family: Ubuntu;
+    margin-top: 35px;
+  }
+
+  .rowImg3_A{
+    color: #3b3b3b;
+    font-size: 25px;
+    font-family: Ubuntu;
+  }
+
+  .rowImg3_ABig{
+    color: #11a3ab;
+    font-size: 25px;
+    font-family: Ubuntu;
+    margin-top: 30px;
+  }
+
+  .rowImg3_ASmall{
+    color: #8a919c;
+    font-size: 15px;
+    font-family: Ubuntu;
+  }
+
+  .alignLeft{
+    text-align: left;
+  }
+
+  .alignRightNew{
+    text-align: right;
+  }
+
+  .lineL3{
+    border: none;
+    height: 1px;
+    color: #8a919c;
+    background-color: #8a919c;
+    width: 1050px;
+  }
+
+  .buttonL5{
+    margin-top: 45px;
+    width: 20%;
+  }
+
+  .buttonL6{
+    margin-top: 45px;
+    width: 15%;
+  }
+
+  .logoLanding{
+    margin-left: 246px;
+    max-width: 250px;
+    //margin-top: 8px;
+  }
+
+  .header1{
+    background-color:#11a3ab;
+    height:30px;
+  }
+
+  .header2{
+    height:80px;
+  }
+
+  .menuMobile{
+    display: block;
+  }
+
+  .menuDesktop{
+    display: none;
+  }
+
+  .jobsL2Txt1{
+    font-size: 20px;
+    font-family: Ubuntu;
+  }
+
+  .jobsL2Txt2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+  }
+
+  .descHeadingJobs{
+    color: white;
+    font-size: 35px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .jobsL3Txt1{
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .jobsL3Txt2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: white;
+  }
+
+  .jobsL3Right{
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 300px;
+  }
+
+  .jobsL3Left{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 300px;
+  }
+
+  .jobsL5Img{
+    height: auto;
+    width: 100%;
+  }
+
+  .jobsL5Txt{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     font-family: Ubuntu;
+     text-align: center;
+     font-size: 20px;
+  }
+
+  .alignRight{
+     text-align: right;
+  }
+
+  .alignLeftt{
+     text-align: left;
+  }
+
+  .jobsL6Txt{
+    position: absolute;
+    //top: 10%;
+    padding: 10px;
+    font-family: Ubuntu;
+    text-align: center;
+    //left:15%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .jobsL6Txt1{
+    margin-top: 10%;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-family: Ubuntu;
+  }
+
+  .jobsL6Txt2{
+    font-family: Ubuntu;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .jobsL6Txt3{
+    font-family: Ubuntu;
+    font-size: 20px;
+  }
+
+  .jobsL6Txt4{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #11a3ab;
+  }
+
+  .descTextL6{
+    font-size: 18px;
+    color: white;
+    /* padding-left: 33%; */
+    /* padding-right: 33%; */
+    font-family: Ubuntu;
+    position: absolute;
+    padding: 10px;
+    top: 65px;
+    left: 35.5%;
+    width: 30%;
+  }
+
+  .bannerImgEvent1{
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    display: block;
+  }
+
+  .bannerImgEvent2{
+    display: none;
+  }
+
+  .pressDesc{
+    color: #273348;
+    font-size: 25px;
+    font-family: Ubuntu;
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .pressDesc2{
+    color: #41454c;
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-left: 240px;
+    margin-bottom: 20px;
+    width: 1000px;
+  }
+
+  .pressDesc3{
+    color: #273348;
+    font-size: 18px;
+    font-family: Ubuntu;
+    margin-left: 240px;
+    margin-bottom: 20px;
+  }
+
+  .jobsL4Txt{
+    font-size: 16px;
+    font-family: Ubuntu;
+    color: #41454c;
+  }
+
+  .jobDtlsHead{
+    color: #11a3ab;
+    font-size: 28px;
+    font-family: Ubuntu;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    cursor: pointer;
+  }
+
+  .jobDtlsDsc{
+    color: #41454c;
+    font-size: 25px;
+    font-family: Ubuntu;
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobDtlsQ{
+    color: #273348;
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .jobsDtlsA{
+    color: #273348;
+    font-size: 18px;
+    font-family: Ubuntu;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .ourStoryL2Txt{
+    color: #11a3ab;
+    font-size: 20px;
+    font-family: Ubuntu;
+  }
+
+  .ourStoryL4Txt1{
+    color: white;
+    font-size: 30px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .ourStoryL4Txt2{
+    color: white;
+    font-size: 23px;
+    font-family: Ubuntu;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .ourStoryL2Txt2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .jobsDefaultTxt{
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+  }
+
+  .eventTxt2{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #273348;
+  }
+
+  .eventTxt{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .landingPageM{
+    display: none;
+  }
+
+  .landingPageD{
+    display: block;
+  }
+
+  .regDialog{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #273348;
+  }
+
+  .pressKit2{
+    background-color: #11a3ab;
+    text-align: center;
+    padding-bottom: 50px;
+    border-radius: 2.2rem;
+    height: 750px;
+  }
+
+  .pressKitMargin{
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
+
+  .pressKit3{
+    font-size: 18px;
+    color: white;
+    font-family: Ubuntu;
+  }
+
+  .pressKitTitle{
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: #41454c;
+  }
+
+  .videoRow{
+    background-color: #11a3ab;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .icon{
+   color: #11a3ab !important;
+  }
+}
+
+//New start
+
+.jobsRow{
+  text-align: center;
+  position: relative;
+  width: auto; /* for IE 6 */
+  display: inline-block;
+}
+
+.jobsL6 {
+   position: relative;
+   width: auto; /* for IE 6 */
+   display: inline-block;
+}
+
+.bannerImg{
+  height: auto;
+  width: 100%;
+  background-size: contain;
+}
+
+.bannerDivL6 {
+   position: relative;
+   width: 100%;
+   display: inline-block;
+}
+
+.navigationLinks{
+  float: right;
+  margin-right: 40px;
+  font-size: 16px;
+  font-family: Ubuntu;
+  color: black !important;
+  margin-top: 5px;
+}
+
+.bannerGrey{
+  height: auto;
+  width: 66%;
+  background-size: contain;
+
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation-name: bannerGreyEx; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+  animation-name: bannerGreyEx;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: initial;
+  animation-delay: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bannerGreyEx {
+    0%   {left:-500px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bannerGreyEx {
+  0%   {left:-500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+.bannerBlue{
+  height: auto;
+  width: 60%;
+  background-size: contain;
+
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation-name: bannerBlueEx; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+  animation-name: bannerBlueEx;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bannerBlueEx {
+    0%   {left:-500px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bannerBlueEx {
+  0%   {left:-500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+//for mobile question and answer
+.bannerGrey1{
+  height: auto;
+  width: 66%;
+  background-size: contain;
+
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation-name: bannerGreyEx1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+  animation-name: bannerGreyEx1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: initial;
+  animation-delay: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bannerGreyEx1 {
+    0%   {left:-500px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bannerGreyEx1 {
+  0%   {left:-500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+.bannerBlue1{
+  height: auto;
+  width: 66%;
+  background-size: contain;
+
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation-name: bannerBlueEx1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+  animation-name: bannerBlueEx1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bannerBlueEx1 {
+    0%   {left:-500px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bannerBlueEx1 {
+  0%   {left:-500px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+
+//New end
+
+.mobileMsg{
+  width: 70vw;
+  max-width: 75vw;
+  padding: 1vw;
+  border-radius: 2.2rem;
+  border: 3px solid #11a3ab;
+  font-family: Ubuntu;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.successImgAnimate {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    max-width: 16vw;
+    width: 9.5vw;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0vw; top:0vw;}
+    100% {left:5vw; top:0vw;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0vw; top:0vw;}
+    100% {left:5vw; top:0vw;}
+}
+
+.successImgAnimate1 {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    max-width: 16vw;
+    width: 9.5vw;
+    margin-left: 2vw;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example1 {
+    0%   {right:0vw; top:0vw;}
+    100% {right:5vw; top:0vw;}
+}
+
+/* Standard syntax */
+@keyframes example1 {
+    0%   {right:0vw; top:0vw;}
+    100% {right:5vw; top:0vw;}
+}
+.countryListTab{
+  overflow-y: auto;
+  border-radius: 2.2rem;
+}
+.companySrchBtn{
+  width: 50%;
+}
+.msgDiv{
+  width: 40%;
+  margin-left: -6%;
+  margin-top:0%;
+  height:auto;
+  padding: 7px 7px 7px 7px;
+  border-radius: .5em;
+  border: #11a3ab 2px solid;
+}
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    background: #11a3ab;
+    border-radius: .5em;
+    float: left;
+    padding: .5em;
+    color: #fff;
+    top: 4vw;
+}
+.fileContainerFile{
+    cursor: pointer;
+    display: block;
+    font-size: 2vw;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+.matchesMsg{
+  color: #5f5f5f;
+  font-family: Ubuntu;
+  font-size: 1.3vw;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 5%;
+}
+.check{
+  border-color: #5f5f5f !important;
+}
+.radio{
+  border-color: #5f5f5f !important;
+}
+.successImg{
+  max-width: 20vw;
+}
+.successCard{
+  max-width: 30%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  color: #3b3b3b;
+  font-family: Ubuntu;
+  font-weight: normal;
+  padding: 0px 2px 2px 2px;
+  border-radius: 2.2rem;
+  border: 3px solid #11a3ab;
+}
+.successTxt{
+  font-family: Ubuntu;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.toggle{
+  color: #11a3ab !important;
+}
+.allymatch{
+  border-left: 3px solid #11a3ab;
+  padding: 0px 0px 0px 0px !important;
+  height: 100%;
+}
+.spacing{
+  padding-top: 0.8vw;
+}
+.matchBar{
+  height: 44px;
+  background-color: #11a3ab;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 2vw;
+}
+.matchQueryFont{
+  font-size: 1.5vw;
+  padding-top: 0.5rem;
+  overflow-y: auto;
+  margin-right: 1vw;
+}
+.layout {
+ border: 2px solid #11a3ab ;
+ .navDrawer {
+   .drawerContent {
+     border: 3px solid #11a3ab !important;
+   }
+ }
+}
+.newInquiryScroll{
+  overflow-y: auto;
+  color: #3b3b3b;
+  font-family: Ubuntu;
+  font-weight: normal;
+  padding: 0px 7px 7px 7px;
+  border-radius: 2.2rem;
+  border: 3px solid #11a3ab;
+  width: 550px;
+}
+.titleBarNewInquiry{
+ margin-left: 30%;
+ background-color: #11a3ab ;
+ font-size: 2vw;
+}
+.acceptRejectLogo{
+  max-height: 5vw;
+  margin-left: 8vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.profilePic{
+  max-height: 8vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+.matchDiv{
+  font-family: Ubuntu;
+  font-size: 1.2vw;
+}
+.alignRight{
+  text-align: right;
+}
+.matchHeading{
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+.inquiry{
+  width: 10vw;
+  margin-right: 5%;
+  color: black;
+  font-size: 1.5vw;
+  padding: 0rem !important;
+}
+.titleBar{
+ margin-left: 20.3vw;
+ background-color: #11a3ab ;
+ font-size: 2vw;
+}
+.matchCardMargin{
+  margin-top: 5%;
+}
+.extraFields{
+  margin-left: 10%;
+}
+.profileDiv{
+  margin-left: 19%;
+  width: 62%;
+  padding: 20px 20px 20px 20px;
+}
+.profileImg{
+  max-width: 11vw;
+}
+.profileBtn{
+  margin-top: 6%;
+}
+.requiredClr{
+  color: #ff3333;
+}
+.generalColor{
+  color: #11a3ab;
+}
+.agreeCheckbox{
+  width: 5px;
+}
+.logosD{
+  display:block;
+  border:none;
+  outline:none;
+  text-decoration:none;
+}
+
+.specialBox{
+  background-color: #f3f5f5;
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 2% 2% 2% 2%;
+}
+.generalFont{
+  color: #3b3b3b;
+  font-family: Ubuntu;
+  font-weight: normal;
+}
+.link{
+  text-decoration: none;
+}
+
+.videoCard{
+  position: relative;
+  margin-top: 15px;
+}
+.bckClr{
+  background-color: #11a3ab;
+}
+.bannerDiv {
+   position: relative;
+   width: auto; /* for IE 6 */
+   display: inline-block;
+}
+.bannerRow div{
+  flex: 1;
+}
+.defaultMargin{
+  margin-left: 17%;
+}
+.regSpacing{
+  margin-left: 15%;
+  width: 70%;
+}
+.options{
+  margin-left:60px;
+}
+b{
+  color: black;
+}
+#collapse{
+  display:block;
+}
+.singleLine{
+  display: flex;
+  margin-left: 10px;
+}
+.singleLine div{
+  flex: 1
+}
+.loginDiv{
+  width: 300px;
+  margin-left: -6%;
+  margin-top:0%;
+  height:auto;
+  padding: 7px 7px 7px 7px;
+  border-radius: 2.2rem;
+}
+.loginBtn{
+  width: 238px;
+}
+.loginLogo{
+  max-width: 100%;
+}
+.cardSize{
+  max-width: 700px;
+  height:auto;
+  margin:auto;
+  background-color: #eeeeee;
+}
+.crdTitle{
+  margin-top:250px;
+}
+.btnDiv{
+  margin: 50 0 0 500;
+}
+:global {
+  .matchcard-enter {
+    position: absolute;
+    left: -100px;
+    transform: rotate(-40deg) translateY(-80px);
+  }
+  .matchcard-enter.matchcard-enter-active {
+    -webkit-animation: slide 0.8s ease-in;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.8s ease-in;
+    animation-delay: 2s;
+  }
+  .matchcard-leave {
+     opacity: 1;
+  }
+  .matchcard-leave.matchcard-leave-active {
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+  }
+  @keyframes swipe-left {
+    to {
+      transform: rotate(-13deg) translate3d(-100%, 0, 0);
+      opacity: 0;
+    }
+  }
+  @keyframes swipe-right {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(40deg) translateY(-80px);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes slide {
+    0%{opacity:0; transform: rotate(-40deg) translateY(-80px);}
+    100% { left: 0; opacity:1; transform: rotate(0deg);}
+  }
+  @keyframes slide {
+    0%{opacity:0; transform: rotate(-40deg) translateY(-80px);}
+    100% { left: 0; opacity:1; transform: rotate(0deg);}
+  }
+  .spacing{
+    margin: 10px 10px 10px 10px;
+  }
+}
