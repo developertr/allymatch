@@ -521,10 +521,7 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   }
 
   .logoLanding{
-    margin-left: 225px;
-    max-width: 400px;
-    width: 400px;
-    padding-top: 20px;
+    height:60px;
   }
 
   .header1{
@@ -1299,8 +1296,8 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   }
 
   .logoLanding{
-    margin-left: 246px;
-    max-width: 250px;
+    margin-left: 0px;
+    height:60px;
     //margin-top: 8px;
   }
 
@@ -1661,17 +1658,17 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
 
 .bannerGrey{
   height: auto;
-  width: 66%;
+  width: 60%;
   background-size: contain;
 
   position: absolute;
   overflow: hidden;
   -webkit-animation-name: bannerGreyEx; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
 
   animation-name: bannerGreyEx;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: initial;
   animation-delay: 1s;
@@ -1679,14 +1676,22 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bannerGreyEx {
-    0%   {left:-500px; top:0px;}
-    100% {left:0px; top:0px;}
+    0%   { left:calc(100% - 160%); top:0px; }
+    10%  { left:0px; top:0px;}
+    25%  { left:0px; top:0px;}
+    75%  { left:0px; top:0px;}
+    90%  { left:0px; top:0px;}
+    100% { left:calc(100% - 160%); top:0px; }
 }
 
 /* Standard syntax */
 @keyframes bannerGreyEx {
-  0%   {left:-500px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 260%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 260%); top:0px; }
 }
 
 .bannerBlue{
@@ -1697,26 +1702,34 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   position: absolute;
   overflow: hidden;
   -webkit-animation-name: bannerBlueEx; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
 
   animation-name: bannerBlueEx;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 9s;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bannerBlueEx {
-    0%   {left:-500px; top:0px;}
-    100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 260%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 160%); top:0px; }
 }
 
 /* Standard syntax */
 @keyframes bannerBlueEx {
-  0%   {left:-500px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 260%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 260%); top:0px; }
 }
 
 //for mobile question and answer

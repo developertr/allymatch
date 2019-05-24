@@ -22,6 +22,8 @@ export default class OurStoryPage extends React.Component<{},{}> {
                 <div className="col-sm-12">
                     <div className={theme.rowImg3Txt}>This simple question led to the sparking idea of allymatch.</div>
                 </div>
+            </div>
+            <div className="row">
                 <div className="col-md-3">
                     <div className={theme.ourStoryLeftBox}>
                         Innovation potential which lies dormant in universities, research institutes and companies could be unlocked with an easier way to find collaboration partners globally.

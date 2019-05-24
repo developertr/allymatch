@@ -75,7 +75,7 @@ render() {
       <div>
 
       <Carousel
-          interval={10000}
+          interval={17000}
           controls={false}
           indicators={true}
           pauseOnHover={false}

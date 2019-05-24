@@ -106,7 +106,7 @@ export default class MainLayout extends React.Component<{ baseStore: BaseStore, 
                     </div>
                     <div className={theme.landingPageD}>
                       <AppBar theme={theme}>
-                          {<IconButton icon='menu' onClick={handleToggle} className={theme.toggle}/>}
+                          {/*{<IconButton icon='menu' onClick={handleToggle} className={theme.toggle}/>}*/}
                           <h1 style={{
                               WebkitBoxFlex: '1',
                               MsFlexPositive: '1',
@@ -147,8 +147,8 @@ export default class MainLayout extends React.Component<{ baseStore: BaseStore, 
                     </div>
                     <div className={theme.landingPageM}>
                       <AppBar theme={theme}>
-                          {<IconButton onClick={handleToggle} className={theme.toggle}>
-                          <FontIcon style={{fontSize:"40px"}} value="menu" /> </IconButton>}
+                          {/*{<IconButton onClick={handleToggle} className={theme.toggle}>*/}
+                          {/*<FontIcon style={{fontSize:"40px"}} value="menu" /> </IconButton>}*/}
                           <h1 style={{
                               WebkitBoxFlex: '1',
                               MsFlexPositive: '1',
@@ -173,7 +173,7 @@ export default class MainLayout extends React.Component<{ baseStore: BaseStore, 
                             </Navigation>
                             ):(
                               <Navigation type="horizontal">
-                                <IconMenu icon='more_vert' position='topRight' menuRipple>
+                                <IconMenu icon='menu' position='topRight' menuRipple>
                                   <MenuItem onClick={() => onClick("/")} caption="Home"></MenuItem>
                                   <MenuItem onClick={() => onClick("/ourStory")} caption="Our Story"></MenuItem>
                                   <MenuItem onClick={() => onClick("/jobs")} caption="Join Our Innovation Factory"></MenuItem>
