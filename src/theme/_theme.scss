@@ -41,13 +41,17 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
     display:inline-block;
     color:$color-primary;
     position:relative;
+    &.themeWhiteButtonGreenBorder {
+      border:solid 2px $color-primary;
+    }
     &:hover {
       text-decoration:none;
     }
     &:after {
       content:'';
       position:absolute;
-      top:16px;
+      top:50%;
+      margin-top:-10px;
       right:20px;
       width:11px;
       height:20px;
@@ -57,10 +61,18 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 300px) {
+  .themeButtonArea {
+    .themeWhiteButton {
+      max-width:calc(100% - 50px);
+      text-align:center;
+      font-size:36px;
+    }
+  }
+
   .appBar{
     background-color: #ffffff;
     // height: 6.8vw;
-    height: 180px;
+    height: 120px;
   }
 
   .banner{
@@ -110,6 +122,8 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
     margin-left: 115px;
     max-width: 250px;
   }
+
+
 
   /*.video{
     width: 800px;
@@ -521,7 +535,7 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   }
 
   .logoLanding{
-    height:60px;
+    height:100px;
   }
 
   .header1{
@@ -1676,7 +1690,7 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bannerGreyEx {
-    0%   { left:calc(100% - 160%); top:0px; }
+    0%   { left:calc(100% - 260%); top:0px; }
     10%  { left:0px; top:0px;}
     25%  { left:0px; top:0px;}
     75%  { left:0px; top:0px;}
@@ -1741,11 +1755,11 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   position: absolute;
   overflow: hidden;
   -webkit-animation-name: bannerGreyEx1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
 
   animation-name: bannerGreyEx1;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: initial;
   animation-delay: 1s;
@@ -1753,14 +1767,22 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bannerGreyEx1 {
-    0%   {left:-500px; top:0px;}
-    100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 266%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 160%); top:0px; }
 }
 
 /* Standard syntax */
 @keyframes bannerGreyEx1 {
-  0%   {left:-500px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 266%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 260%); top:0px; }
 }
 
 .bannerBlue1{
@@ -1771,26 +1793,34 @@ $preferred-font: "Ubuntu", "Helvetica", "Arial", sans-serif;
   position: absolute;
   overflow: hidden;
   -webkit-animation-name: bannerBlueEx1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
 
   animation-name: bannerBlueEx1;
-  animation-duration: 3s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 9s;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes bannerBlueEx1 {
-    0%   {left:-500px; top:0px;}
-    100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 260%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 160%); top:0px; }
 }
 
 /* Standard syntax */
 @keyframes bannerBlueEx1 {
-  0%   {left:-500px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   { left:calc(100% - 260%); top:0px; }
+  10%  { left:0px; top:0px;}
+  25%  { left:0px; top:0px;}
+  75%  { left:0px; top:0px;}
+  90%  { left:0px; top:0px;}
+  100% { left:calc(100% - 260%); top:0px; }
 }
 
 

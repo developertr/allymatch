@@ -185,9 +185,11 @@ render() {
               <img className={theme.rowImg3_1} src="https://www.globalsuccess-club.net/documents/20589/51325/icon-focus.gif/dc29949a-86ec-439a-946c-251f27f7e533?t=1522138863426"/>
               <br></br><span className={theme.rowImg3_Txt}>Focusing<br></br> on your core <br></br>business</span>
             </div>
-
-            <div>
-              <a href="/#/register"><img className={theme.buttonL2} src="https://www.globalsuccess-club.net/documents/20589/51325/cta-1.gif/d342f864-7e8d-45d9-8708-5f71df1d6945?t=1522138860630"/></a>
+              <div className="clearfix"></div>
+            <div className={theme.themeButtonArea}>
+                <a href="/#/register" className={theme.themeWhiteButton + ' ' +theme.themeWhiteButtonGreenBorder}>
+                    Let allymatch find the right partner for you
+                </a>
             </div>
           </div>
         </div>
@@ -374,8 +376,11 @@ render() {
           With intelligent algorithms and high quality users, find your match from the
           <br></br>comfort of your own smart phone for a fraction of the time and cost of other B2B services.
           </div>
-
-          <a href="/#/register"><img className={theme.buttonL5} src="https://www.globalsuccess-club.net/documents/20589/51325/cta-2.gif/898e1b7a-d78a-4f99-afa5-6e7c1a7044b3?t=1522138861116"/></a>
+            <div className={theme.themeButtonArea}>
+                <a href="/#/register" className={theme.themeWhiteButton}>
+                    TRY ALLYMATCH NOW!
+                </a>
+            </div>
         </div>
 
         <div className={theme.bannerDivL6}>
@@ -390,7 +395,11 @@ render() {
             ways never before possible.
             </div>
             <div className={theme.boldTxtL6}>See how allymatch solves an age old problem for growing businesses.</div>
-            <a href="/#/register"><img  className={theme.buttonL6} src="https://www.globalsuccess-club.net/documents/20589/51325/cta-3.gif/992130da-82c9-44f9-9f48-89ee3fafb347?t=1522138861471"/></a>
+              <div className={theme.themeButtonArea}>
+                  <a href="/#/register" className={theme.themeWhiteButton}>
+                      Register now
+                  </a>
+              </div>
           </div>
          </div>
 
@@ -450,7 +459,11 @@ render() {
           together for collaboration. Are you ready to start the journey to a more efficient and cost effective process?
           </div>
           <br></br>
-          <a href="/#/register"><img  className={theme.buttonL6} src="https://www.globalsuccess-club.net/documents/20589/51325/cta-3.gif/992130da-82c9-44f9-9f48-89ee3fafb347?t=1522138861471"/></a>
+            <div className={theme.themeButtonArea}>
+                <a href="/#/register" className={theme.themeWhiteButton}>
+                    Register now
+                </a>
+            </div>
         </div>
 
 

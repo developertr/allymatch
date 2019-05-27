@@ -112,7 +112,7 @@ export default class MainLayout extends React.Component<{ baseStore: BaseStore, 
                               MsFlexPositive: '1',
                               flexGrow: 1
                           }}>
-                            <a href="/#"><img className={theme.logoLanding} src="https://www.globalsuccess-club.net/documents/20589/51325/top-logo.jpg/83a3d1bd-706c-4214-968f-37ac4335481a?t=1522138872818"/></a>
+                            <a href="/#"><img className={theme.logoLanding} src="https://www.globalsuccess-club.net/documents/20589/33068/top-logo_2019_1x.gif/43cb7f1a-cbb4-4b6d-a5b8-b23b7b92ba7e?t=1558681068011"/></a>
 
                             </h1>
 
@@ -154,7 +154,7 @@ export default class MainLayout extends React.Component<{ baseStore: BaseStore, 
                               MsFlexPositive: '1',
                               flexGrow: 1
                           }}>
-                            <a href="/#"><img className={theme.logoLanding} src="https://www.globalsuccess-club.net/documents/20589/51325/top-logo.jpg/83a3d1bd-706c-4214-968f-37ac4335481a?t=1522138872818"/></a>
+                            <a href="/#"><img className={theme.logoLanding} src="https://www.globalsuccess-club.net/documents/20589/33068/top-logo_2019_1x.gif/43cb7f1a-cbb4-4b6d-a5b8-b23b7b92ba7e?t=1558681068011"/></a>
 
                             </h1>
 

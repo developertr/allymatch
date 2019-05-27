@@ -111,7 +111,7 @@ export default class JobsPage extends React.Component<{},{}> {
           <div className={theme.descHeadingJobs}>We are looking for innovators in...</div>
           <div className="row" style={{margin: '0px', paddingLeft: '30px', paddingRight: '30px'}}>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
-              <a href="/#/csmJobs" target="_blank"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/customer-2.jpg/e9558de3-11a9-4893-bf42-a8ce156f45d6?t=1524046192432"/></a>
+              <a href="/#/csmJobs"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/customer-2.jpg/e9558de3-11a9-4893-bf42-a8ce156f45d6?t=1524046192432"/></a>
               {/*<div className={theme.jobsL5Txt}>Customer Success Management</div>*/}
             </div>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
@@ -119,21 +119,21 @@ export default class JobsPage extends React.Component<{},{}> {
               {/*<div className={theme.jobsL5Txt}>Software Development</div>*/}
             </div>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
-              <a href="/#/meJobs" target="_blank"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/marketing-2.jpg/0c79a314-8fee-4119-ac22-d4ccda8f07e3?t=1524046196298"/></a>
+              <a href="/#/meJobs"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/marketing-2.jpg/0c79a314-8fee-4119-ac22-d4ccda8f07e3?t=1524046196298"/></a>
               {/*<div className={theme.jobsL5Txt}>Marketing & Events</div>*/}
             </div>
           </div>
           <div className="row" style={{margin: '0px', paddingLeft: '30px', paddingRight: '30px'}}>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
-              <a href="/#/pmsJobs" target="_blank"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/partnership-2.jpg/8c6333f7-841f-4f3a-baa8-56c2d6438916?t=1524046199883"/></a>
+              <a href="/#/pmsJobs"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/partnership-2.jpg/8c6333f7-841f-4f3a-baa8-56c2d6438916?t=1524046199883"/></a>
               {/*<div className={theme.jobsL5Txt}>Partnership Management & Sales</div>*/}
             </div>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
-              <a href="/#/iyiJobs" target="_blank"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/innovators-2.jpg/5b0411ba-476a-4dd8-8bb3-4941fd51e8b2?t=1524046194263"/></a>
+              <a href="/#/iyiJobs"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/innovators-2.jpg/5b0411ba-476a-4dd8-8bb3-4941fd51e8b2?t=1524046194263"/></a>
               {/*<div className={theme.jobsL5Txt}>Internships for young innovators</div>*/}
             </div>
             <div className="col-xs-12 col-md-4 col-sm-12" style={{padding: '0px'}}>
-              <a href="/#/otherJobs" target="_blank"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/other-2.jpg/cd8dbbb0-498f-4369-9f39-e211fe9a0ed3?t=1524046198099"/></a>
+              <a href="/#/otherJobs"><img className={theme.jobsL5Img} src="https://www.globalsuccess-club.net/documents/20589/53477/other-2.jpg/cd8dbbb0-498f-4369-9f39-e211fe9a0ed3?t=1524046198099"/></a>
               {/*<div className={theme.jobsL5Txt}>Other</div>*/}
             </div>
           </div>

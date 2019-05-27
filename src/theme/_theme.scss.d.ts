@@ -178,3 +178,4 @@ export const ourStoryLeftBox: string;
 export const ourStoryRightBox: string;
 export const themeButtonArea: string;
 export const themeWhiteButton: string;
+export const themeWhiteButtonGreenBorder: string;
