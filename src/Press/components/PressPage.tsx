@@ -42,7 +42,7 @@ export default class PressPage extends React.Component<{},{}> {
                 <img className={theme.rowImg1} src="https://www.globalsuccess-club.net/documents/20589/53755/media-kit.png/3c46b0f7-6076-4795-8552-22571d0a2623?t=1524240078564"/>
                 <div className={theme.pressKitTitle}>Media Kit</div>
                 <br></br><br></br>
-                <a href="https://www.globalsuccess-club.net/documents/20589/53755/Company+Information.pdf/51107e71-9684-4398-a543-747f0a601357" target="_blank"><span className={theme.pressKit3}>Company Information (PDF, 113.0 KB)</span></a><br></br><br></br>
+                <a href="https://www.globalsuccess-club.net/documents/20589/53755/Company+Information+2019/fb7f1a11-3a20-40e5-8ea2-2acca054dbe7" target="_blank"><span className={theme.pressKit3}>Company Information (PDF, 113.0 KB)</span></a><br></br><br></br>
                 <a href="https://www.globalsuccess-club.net/documents/20589/53755/Executive+Profile.pdf/53052a57-896e-4730-8d3c-fa86468ef0a4" target="_blank"><span className={theme.pressKit3}>Executive Profile (PDF, 142.0 KB)</span></a><br></br><br></br>
                 <a href="https://www.globalsuccess-club.net/documents/20589/53755/I_Kemmler+1.jpg/1b90e485-5e2e-438b-8740-59098143557f?t=1524239344063" target="_blank"><span className={theme.pressKit3}>I.Kemmler (JPEG, 1.5 MB)</span></a><br></br><br></br>
                 <a href="https://www.globalsuccess-club.net/documents/20589/53755/am-logo_horizontal-claim_cmyk_uncoated.eps/e31b31a4-7a2e-434c-a9f7-c8846d43c9e6" target="_blank"><span className={theme.pressKit3}>allymatch logo - horizontal with claim (EPS, 3.1 MB)</span></a><br></br><br></br>
